@@ -1,0 +1,1275 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Kush Portfolio</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	
+	
+	<!-- Font -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet">
+	
+	<!-- Stylesheets -->
+	
+	<link href="bootstrap.css" rel="stylesheet">
+	
+	<link href="ionicons.css" rel="stylesheet">
+	
+	<link href="fluidbox.min.css" rel="stylesheet">
+	
+	<link href="styles.css" rel="stylesheet">
+	
+	<link href="responsive.css" rel="stylesheet">
+	
+    
+    <!--Below is a testing code snippet-->
+    
+   
+    <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*Css property for side nav bar starts*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    width: 100%;
+}
+
+/*Css property for side nav bar end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Below code for image gallery*/
+
+
+.shadoweffect {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+}
+
+.shadoweffect:hover {
+    box-shadow: 8px 16px 32px 8px rgba(0,0,0,0.2);
+}
+
+/*Above code for image gallery*/
+
+
+
+
+.shadoweffect2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+}
+
+.shadoweffect2:hover {
+    box-shadow: 8px 16px 32px 8px rgba(0,0,0,0.2);
+}
+
+
+
+
+.showshadow {
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    
+}
+
+.showshadow:hover {
+    box-shadow: 8px 16px 32px 8px rgba(0,0,0,0.2);
+}
+
+
+
+<!--The below code is for tooltip effect over image gallery heading-->
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+<!--The above code is for tooltip effect in image gallery-->
+
+
+
+/*Below code is for new photo gallery*/
+
+
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #787878;
+  color:white;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+
+
+/*Above code is for new photo gallery*/
+
+
+
+
+/*Below code is for top link button*/
+
+
+#myBtn1 {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn1:hover {
+  background-color: #555;
+}
+
+
+/*Above code is for top link button*/
+
+/*Below code is for notification*/
+
+
+.notification {
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.notification:hover {
+  background: red;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
+
+
+/*Above code is for notification*/
+
+
+
+
+
+
+
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 40%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+}
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 1.0s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+   
+    
+      <!--Above is a testing code snippet-->
+    
+    
+    
+    
+    
+    
+</head>
+<body>
+	
+    
+         
+    
+    <button onclick="topFunction()" id="myBtn1" title="Go to top">Top</button>
+
+    
+    
+	
+            
+            
+           
+            <header> 
+            
+            
+            
+              <!--Side nav bar code-->
+    
+    
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#main" class="fa fa-home">Home</a>
+  <a href="#aboutme">About Me</a>
+  <a href="#piechart">Normal Routine</a>
+  <a href="#designsample">Design Samples</a>
+  <a href="#experience12">Work Experience</a>
+  <a href="#education">Education</a>
+  
+  <a href="coupon.html">Online Training Coupons</a>
+   <a href="https://kushshah253.wooplr.com/">Online Store</a>
+</div>
+
+<div id="main" class="btn btn-outline-success">
+  
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+</div>
+    
+    
+    
+    <!--Side nav bar code ends-->
+    
+
+            
+            
+            <br/>
+            
+            
+            <br/>
+            
+            
+            
+            <strong>
+            
+            
+		<div class="container">
+			<div class="heading-wrapper">
+				<div class="row">
+					<div class="col-sm-6 col-md-6 col-lg-4">
+						<div class="info">
+							<i class="icon ion-ios-location-outline"></i>
+							<div class="right-area">
+								<h5>PF(Boys Hostel)</h5>
+								<h5>SRM University Chennai</h5>
+                                                                <h5>603203</h5>
+							</div><!-- right-area -->
+						</div><!-- info -->
+					</div><!-- col-sm-4 -->
+					
+					<div class="col-sm-6 col-md-6 col-lg-4">
+						<div class="info">
+							<i class="icon ion-ios-telephone-outline"></i>
+							<div class="right-area">
+								<h5>7224876124</h5>
+								<h6>MON - FRI</h6>
+                                                                <h6>10AM - 6PM</h6>
+							</div><!-- right-area -->
+						</div><!-- info -->
+					</div><!-- col-sm-4 -->
+					
+					<div class="col-sm-6 col-md-6 col-lg-4">
+						<div class="info">
+							<i class="icon ion-ios-chatboxes-outline"></i>
+							<div class="right-area">
+                                                            <h5><a href="mailto:raffellawrence@gmail.com">raffellawrence@gmail.com</a></h5>
+								<h6>REPLY within 48 HOURS</h6>
+                                                                
+                                                                                                                 
+                                                                
+                                                                
+							</div><!-- right-area -->
+						</div><!-- info -->
+					</div><!-- col-sm-4 -->
+				</div><!-- row -->
+			</div><!-- heading-wrapper -->
+			</strong>
+			<a class="downlad-btn" href="errorimg.html">Download CV</a>
+                         <br/><br/> <br/><br/> <br/><br/> <br/><br/><br/><br/> <br/><br/><br/><br/>
+                                                                <br/><br/><br/>
+                                                                <a href="#" class="notification">
+  <span><button onclick="myFunction()">Inbox</button></span>
+  <span class="badge">1</span>
+</a>
+        
+<!-- The actual snackbar -->
+<div id="snackbar">Please don't call on the contact number mentioned. It will be updated soon.</div>       
+		</div><!-- container -->
+	</header>
+	
+    <!-- Use a button to open the snackbar -->
+
+
+    
+    
+    
+  <br/>  
+    
+ <br/>
+            
+    
+    
+    
+    
+    
+	<section class="intro-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1 col-lg-2"></div>
+				<div class="col-md-10 col-lg-8">
+					<div class="intro">
+						<div class="profile-img showshadow"><img src="IMG_20180824_085859.jpg" alt="Profile Pic"></div>
+						<h2><b>Kush Shah</b></h2>
+						<h4 class="font-yellow">FRONT END WEB DEVELOPER</h4>
+                                                <h4 class="font-yellow">GRAPHICS DESIGNER</h4>
+						<ul class="information margin-tb-30">
+							<li><b>BORN : </b>March 25, 1999</li>
+							<li><b>EMAIL : </b><a href="mailto:raffellawrence@gmail.com">raffellawrence@gmail.com</a></li>
+							<li><b>PROFESSION : </b>Undergraduate in CSE(BTech)</li>
+						</ul>
+						<ul class="social-icons">
+                                                        <li><a href="https://www.facebook.com/kushKV95"><i class="ion-social-facebook"></i></a></li>
+                                                        <li><a href="https://www.linkedin.com/in/kush-shah-5a771b169/"><i class="ion-social-linkedin"></i></a></li>
+                                                        <li><a href="https://www.instagram.com/know_me_gfx/"><i class="ion-social-instagram"></i></a></li>
+                                                        <li><a href="https://twitter.com/kushshah253"><i class="ion-social-twitter"></i></a></li>
+							<li><a href="https://in.pinterest.com/kushshah253/"><i class="ion-social-pinterest"></i></a></li>
+							
+						</ul>
+					</div><!-- intro -->
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- intro-section -->
+	
+        
+        
+        
+        
+        
+        
+              
+        <hr/>
+        
+        
+        
+        
+        <section id="aboutme" class="about-section section" style="background-color: rgba(225,225,225,0.4)">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="heading">
+						<h3><b>About me</b></h3>
+						<h6 class="font-lite-black"><b>PROFESSIONAL PATH</b></h6>
+					</div>
+				</div><!-- col-sm-4 -->
+				<div class="col-sm-8">
+					<p class="margin-b-50">Heyy..Everyone. You can call me a confused person-sometimes.!
+                                        I am a kind of person who wants to do everything once in a while. I want to
+                                        experience as many things as those are present in this world. Presently, I have
+                                        been working as a Graphic Designer and developing responsive web sites. I want to
+                                        explore my passion in Machine Learning,Cyber Security and Ethical hacking too.
+                                        I personally believe that each and every work has its own importance. Nothing
+                                        is easy in this world.
+                                        I want to know about many things and wanna be a master of one thing.
+                                        I like my audience and would like to acknowledge for
+                                        showering lots of love on me.</p>
+					
+					<div class="row">
+						<div class="col-sm-6 col-md-6 col-lg-3">
+							<div class="radial-prog-area margin-b-30">
+								<div class="radial-progress" data-prog-percent=".84">
+									<div></div>
+									<h6 class="progress-title">HTML5 & CSS3</h6>
+								</div>
+							</div><!-- radial-prog-area-->
+						</div><!-- col-sm-6-->
+					
+						<div class="col-sm-6 col-md-6 col-lg-3">
+							<div class="radial-prog-area margin-b-30">
+								<div class="radial-progress" data-prog-percent=".89">
+									<div></div>
+									<h6 class="progress-title">WEB DESIGN</h6>
+								</div>
+							</div><!-- radial-prog-area-->
+						</div><!-- col-sm-6-->
+						
+						<div class="col-sm-6 col-md-6 col-lg-3">
+							<div class="radial-prog-area margin-b-30">
+								<div class="radial-progress" data-prog-percent=".81">
+									<div></div>
+									<h6 class="progress-title">BOOTSTRAP</h6>
+								</div>
+							</div><!-- radial-prog-area-->
+						</div><!-- col-sm-6-->
+						
+						<div class="col-sm-6 col-md-6 col-lg-3">
+							<div class="radial-prog-area margin-b-50">
+								<div class="radial-progress" data-prog-percent=".85">
+									<div></div>
+									<h6 class="progress-title">GRAPHIC<br/>DESIGNER</h6>
+								</div>
+							</div><!-- radial-prog-area-->
+						</div><!-- col-sm-6-->
+					
+					</div><!-- row -->
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- about-section -->
+	
+        
+        
+        <br/>
+        <hr/>
+        
+        
+        
+        
+        
+         <!--Calling pie chart whose script is mentioned at the end-->
+        
+        
+        <h1><emp>Normal Routine</emp></h1>
+
+<div id="piechart"></div>
+        
+        
+        
+         <!--Calling pie chart whose script is mentioned at the end-->
+        
+        
+        
+        
+           <br/>
+        <hr/>
+        
+         
+         
+         
+        
+        
+        
+        
+        <!-- MAIN (Center website) -->
+<div id="designsample" class="main" style="background-color: rgba(245,245,245,0.4)">
+
+<h1>PORTFOLIO</h1>
+
+<h3>DESIGN SAMPLE</h3>
+<br/>
+
+<div id="myBtnContainer">
+  <button class="btn active shadoweffect2" onclick="filterSelection('Showall')"> Show all</button>
+  <button class="btn shadoweffect2" onclick="filterSelection('WebDesign')"> Web Design</button>
+  <button class="btn shadoweffect2" onclick="filterSelection('Logo')"> Logo</button>
+  <button class="btn shadoweffect2" onclick="filterSelection('GraphicDesign')"> Graphic design</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column GraphicDesign Showall">
+    <div class="content shadoweffect">
+      <a href="final_personal_Designation.jpg" data-fluidbox>
+					<img src="final_personal_Designation.jpg" alt=""></a>  
+       <br/><br/>
+
+
+<button id="myBtn" class="btn btn-primary" style="background:#666">Random Edit</button>
+
+<div class="tooltip">More
+  <span class="tooltiptext">This is one of the best posters.</span>
+</div>
+
+
+
+    
+      
+    </div>
+  </div>
+  <div class="column WebDesign Showall">
+    <div class="content shadoweffect">
+    <a href="save polar bear.jpg" data-fluidbox>
+					<img src="save polar bear.jpg" alt=""></a>
+         <br/><br/>
+      <button id="myBtn" class="btn btn-primary" style="background:#666">Monotonic Bear</button>
+    </div>
+  </div>
+  <div class="column GraphicDesign Showall">
+    <div class="content shadoweffect">
+    <a href="question_on_life.jpg" data-fluidbox>
+					<img src="question_on_life.jpg" alt=""></a>
+         <br/><br/>
+      <button id="myBtn" class="btn btn-primary" style="background:#666">Question ?</button>
+    </div>
+  </div>
+  
+  <div class="column Logo Showall">
+    <div class="content shadoweffect">
+      <a href="Logo-ECO_SOUNDS_2.jpg" data-fluidbox>
+					<img src="Logo-ECO_SOUNDS_2.jpg" alt=""></a>
+         <br/><br/>
+      <button id="myBtn" class="btn btn-primary" style="background:#666">Eco Sounds</button>
+    </div>
+  </div>
+  <div class="column Logo Showall">
+    <div class="content shadoweffect">
+    <a href="OUT DOOR_2.jpg" data-fluidbox>
+					<img src="OUT DOOR_2.jpg" alt=""></a>
+         <br/><br/>
+     <button id="myBtn" class="btn btn-primary" style="background:#666">Outdoor </button>
+    </div>
+  </div>
+    
+    
+    <div class="column WebDesign Showall GraphicDesign">
+    <div class="content shadoweffect">
+   <a href="forest.jpg.jpg" data-fluidbox>
+					<img src="forest.jpg" alt=""></a>
+        <br/> <br/>
+      <button id="myBtn" class="btn btn-primary" style="background:#666">Forest Theme</button>
+    </div>
+  </div>
+    
+    
+  <div class="column GraphicDesign Showall">
+    <div class="content shadoweffect">
+    <a href="AUVThankU_@Kush_final_99025.jpg" data-fluidbox>
+					<img src="AUVThankU_@Kush_final_99025.jpg" alt=""></a>
+         <br/><br/>
+      <button id="myBtn" class="btn btn-primary" style="background:#666">Acknowledgement</button>
+    </div>
+  </div>
+
+  <div class="column GraphicDesign Showall">
+    <div class="content shadoweffect">
+      <a href="glow effect 2.jpg" data-fluidbox>
+					<img src="glow effect 2.jpg" alt=""></a>
+         <br/><br/>
+     <button id="myBtn" class="btn btn-primary" style="background:#666">Glow Effect</button>
+    </div>
+  </div>
+  <div class="column WebDesign Showall GraphicDesign">
+    <div class="content shadoweffect">
+    <a href="LIFESTYLE_2.jpg" data-fluidbox>
+					<img src="LIFESTYLE_2.jpg" alt=""></a>
+        <br/><br/>
+      <button id="myBtn" class="btn btn-primary" style="background:#666">Upcoming store</button>
+    </div>
+  </div>
+  
+    
+    
+   <div class="column GraphicDesign Showall">
+    <div class="content shadoweffect">
+    <a href="Meditation2.jpg" data-fluidbox>
+		<img src="Meditation2.jpg" alt=""></a>
+        <br/><br/>
+      <button id="myBtn" class="btn btn-primary" style="background:#666">Meditation</button>
+    </div>
+  </div>
+  
+    
+    
+       
+     <div class="column GraphicDesign Showall">
+    <div class="content shadoweffect">
+    <a href="Kush@spongy.png" data-fluidbox>
+					<img src="Kush@spongy.png" alt=""></a>
+        <br/><br/>
+      <button id="myBtn" class="btn btn-primary" style="background:#666">Spongy Sketch</button>
+    </div>
+  </div>
+  
+    
+    
+    
+    
+    
+    
+     <div class="column WebDesign Showall">
+    <div class="content shadoweffect">
+    <a href="my style.jpg" data-fluidbox>
+					<img src="my style.jpg" alt=""></a>
+        <br/><br/>
+      <button id="myBtn" class="btn btn-primary" style="background:#666">Tear Design</button>
+    </div>
+  </div>
+  
+    
+    
+    
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+       
+        
+        
+	<br/>
+	<hr style='width:80% ; color:#000 ; align: center ; color: blue ; size: 100px ; height:50px'>
+	
+        
+        
+        
+               
+
+        
+        
+       
+        
+        
+        
+        
+         <hr/>
+        
+        
+        
+        
+        
+	<section class="experience-section section" id="experience12">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="heading">
+						<h3><b>Work Experience</b></h3>
+						<h6 class="font-lite-black"><b>PREVIOUS JOBS</b></h6>
+					</div>
+				</div><!-- col-sm-4 -->
+				<div class="col-sm-8">
+				
+					<div class="experience margin-b-50">
+						<h4><b>GRAPHIC DESIGNER</b></h4>
+						<h5 class="font-yellow"><b>AARUUSH CREATIVES</b></h5>
+						<h6 class="margin-t-10">JULY 2017 - JULY 2018</h6>
+						<p class="font-semi-white margin-tb-30">The journey began as a toddler in
+                                                the field of designing. But thanx to my seniors who lifted me from a zeroth 
+                                                level to a position where I could handle designing in a short interval of
+                                                time. Since then I have worked on different genres of designing. These includes
+                                                creative poster designing, banner designing, id cards, tshirt designing and
+                                                various others. The team's support gave me a chance to work with other
+                                                technical teams in the campus though.</p>
+						<ul class="list margin-b-30">
+							<li>Worked on Adobe Photoshop and Adobe Illustrator(amateur).</li>
+							<li>Poster published on the aaruush page.</li>
+							<li>Worked with senior designers.</li>
+						</ul>
+					</div><!-- experience -->
+					
+					<div class="experience margin-b-50">
+						<h4><b>GRAPHIC DESIGNER/CORPORATE MEMBER</b></h4>
+						<h5 class="font-yellow"><b>SRM AUV</b></h5>
+						<h6 class="margin-t-10">APRIL 2018 - August 2018</h6>
+						<p class="font-semi-white margin-tb-30">I have been working with the known
+                                                technical team - SRM AUV i.e. Autonomous Underwater Vehicle. I worked as 
+                                                graphic designer as well as helped in conducting help desk during pre-recruitment phase.</p>
+						<ul class="list margin-b-30">
+							
+							<li>Graphic Designer and front end developer is a great combination.</li>
+							<li>Posters type: Banners, id-cards, t-shirt designing, creative posters.</li>
+                                                        <li>Handle their pre-recruitment helpdesk. </li>
+					</div><!-- experience -->
+					
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+		
+	</section><!-- experience-section -->
+	
+	<section class="education-section section" id="education">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="heading">
+						<h3><b>Education</b></h3>
+						<h6 class="font-lite-black"><b>ACADEMIC CAREER</b></h6>
+					</div>
+				</div><!-- col-sm-4 -->
+				<div class="col-sm-8">
+					<div class="education-wrapper">
+						<div class="education margin-b-50">
+							<h4><b>BTech IN COMPUTER SCIENCE AND TECHNOLOGY</b></h4>
+							<h5 class="font-yellow"><b>SRM Institute of Science and Technology</b></h5>
+							<h6 class="font-lite-black margin-t-10">PRESENTLY IN 2ND YEAR</h6>
+							<p class="margin-tb-30">The campus is surrounded by ample of oppurtunities
+                                                        and I started my skill development in Graphic Designing as it involved
+                                                        digitalising the creative ideas on screen. I applied for various clubs/teams
+                                                        followed by selection(one such team was SRMSAT). Earned certificates in
+                                                        various competitions. Completed my training in web development. But I am 
+                                                        more into front end developing.As far as the scores are concerned, I
+                                                        managed to secure 9.51 CGPA in my first year. I like to code. I want to
+                                                        explore few fields like Machine Learning, Cyber Security and Ethical Hacking.</p>
+						</div><!-- education -->
+						</div>
+                        <div class="education-wrapper">
+                        
+						<div class="education margin-b-50">
+							<h4><b>Higher Secondary</b></h4>
+							<h5 class="font-yellow"><b>BVB's GIPCL ACADEMY</b></h5>
+							<h6 class="font-lite-black margin-t-10">Cleared IN April 2017</h6>
+							<p class="margin-tb-30">In my two years phase of higher secondary I was
+                                                        more interested into Mathematics and Physics. But bounded by pressurised
+                                                        community couldn't focus on developing more skills. Though was satisfied
+                                                        by my score in PCM(95%). Recieved few certificates too.</p>
+						</div><!-- education -->
+                            </div>
+						<div class="education-wrapper">
+						<div class="education margin-b-50">
+							<h4><b>SECONDARY EDUCATION</b></h4>
+							<h5 class="font-yellow"><b>BVB's GIPCL ACADEMY</b></h5>
+							<h6 class="font-lite-black margin-t-10">Cleared IN APRIL 2015</h6>
+							<p class="margin-tb-30">I was more into Mathematics. I liked to work on 
+                                                        number patterns. I am an active participant. I liked to explore more
+                                                        and more fields. Leaded a team of talented students who helped me to
+                                                        understand how efficient each one of us around is. As far as scores
+                                                        are concerned, I somehow managed to get 10 CGPA.</p>
+						</div><!-- education -->
+					</div><!-- education-wrapper -->
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+		
+	</section><!-- about-section -->
+	
+	<section class="counter-section" id="counter">
+		<div class="container">
+			<div class="row">
+			<br/>
+				<div class="col-sm-6 col-md-6 col-lg-3" style="background-color: #666;color:white">
+					<div class="counter margin-b-30">
+						<h1 class="title"><b><span class="counter-value" data-duration="200" data-count="05">0</span></b></h1>
+						<h5 class="desc"><b>Coder Degrees</b></h5>
+					</div><!-- counter -->
+				</div><!-- col-md-3-->
+				
+				<div class="col-sm-6 col-md-6 col-lg-3" style="background-color: #666;color:white">
+					<div class="counter margin-b-30">
+						<h1 class="title"><b><span class="counter-value" data-duration="800" data-count="11">0</span></b></h1>
+						<h5 class="desc"><b>Satisfied Clients</b></h5>
+					</div><!-- counter -->
+				</div><!-- col-md-3-->
+				
+				
+				
+				<div class="col-sm-6 col-md-6 col-lg-3" style="background-color: #666;color:white">
+					<div class="counter margin-b-30">
+						<h1 class="title"><b><span class="counter-value" data-duration="1200" data-count="52">0</span></b></h1>
+						<h5 class="desc"><b>Hands on Projects</b></h5>
+					</div><!-- margin-b-30 -->
+				</div><!-- col-md-3-->
+				
+                                <div class="col-sm-6 col-md-6 col-lg-3" style="background-color: #666;color:white">
+					<div class="counter margin-b-30">
+						<h1 class="title"><b><span class="counter-value" data-duration="1800" data-count="125">0</span></b></h1>
+						<h5 class="desc"><b>Designed posters</b></h5>
+					</div><!-- counter -->
+				</div><!-- col-md-3-->
+                                
+                                
+                                
+			</div><!-- row-->
+		</div><!-- container-->
+    </section><!-- counter-section-->
+	
+	<footer>
+		<p class="copyright" style="color:white">
+			<strong>
+ Portfolio-Kush | Made with <i class="ion-heart" aria-hidden="true"></i> by <a href="#" target="_blank">Kushec</a>
+                        </strong>
+		</p>
+
+
+	</footer>
+	
+	
+	<!-- SCIPTS -->
+	
+	<script src="jquery-3.2.1.min.js"></script>
+	
+	<script src="tether.min.js"></script>
+	
+	<script src="bootstrap.js"></script>
+	
+	<script src="isotope.pkgd.min.js"></script>
+	
+	<script src="jquery.waypoints.min.js"></script>
+	
+	<script src="progressbar.min.js"></script>
+	
+	<script src="jquery.fluidbox.min.js"></script>
+	
+	<script src="scripts.js"></script>
+    
+    
+        
+        <!--The code snippet used below is for the pie chart-->
+        
+
+        
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['Work', 9],
+  ['Refreshment',2],
+  ['Eat/Social Time', 2],
+ 
+  ['Learning/Training ', 4],
+  ['Sleep', 7]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'My Average Day', 'height':700};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+
+        
+     <!--The code snippet used above is for the pie chart-->
+            
+        
+       
+     
+     
+     <!--Below code is for top link button-->
+     
+     
+     
+     <script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn1").style.display = "block";
+    } else {
+        document.getElementById("myBtn1").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+     
+     
+     
+     
+     
+        
+        
+
+     
+     <!--Below code snippet is for gallery-->
+     <script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+
+<!--Above code snippet is for gallery-->
+     
+     
+<!--Script for side nav bar-->
+
+<script>
+    
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+
+<!--Script for side nav bar-->
+     
+   
+
+
+
+
+
+
+
+<script>
+    function myFunction() {
+    // Get the snackbar DIV
+    var x = document.getElementById("snackbar");
+
+    // Add the "show" class to DIV
+    x.className = "show";
+
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
+
+
+
+
+
+
+
+
+
+     
+     
+     
+     
+     
+</body>
+</html>
