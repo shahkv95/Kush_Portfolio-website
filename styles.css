@@ -44,7 +44,7 @@ h1,h2,h3,h4,h5,h6{ line-height: 1.5; font-weight: inherit; }
 
 h1,h2,h3{ font-family: 'Poppins', cursive; }
 
-p{ line-height: 1.6; font-size: 1.05em; font-weight: 400; color: #777; }	//#777- color of the description about me
+p{ line-height: 1.6; font-size: 1.05em; font-weight: 400; color: #777; }	//#777 - color of the description about me
 
 h1{ font-size: 4em; line-height: 1; }
 h2{ font-size: 2.2em; line-height: 1.1; }
@@ -226,7 +226,7 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 --------------------------------- */
 
 .counter-section{ position: relative; padding: 100px 0 70px; background-size: cover; z-index: 1; 
-	background-image: url(../../images/240_F_108141338_KFfOFeFSQkmw20dDmdELiTT5R3UUsKo2.jpg); color: #fff; }
+	background-image: url(images/240.jpg); color: #fff; }	// background image for counter
 
 .counter-section:after{ content:''; z-index: -1; position: absolute; top: 0; bottom: 0; left: 0; 
 	right: 0; background: rgba(0,0,0, .2); }
