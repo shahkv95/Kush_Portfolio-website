@@ -29,8 +29,7 @@ h1 {
   margin: 0.67em 0;
 }
 
-figcaption,
-figure,
+figcaption,figure,
 main {
   display: block;
 }
