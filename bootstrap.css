@@ -131,8 +131,7 @@ svg:not(:root) {
 }
 
 button,
-input,
-optgroup,
+input,optgroup,
 select,
 textarea {
   font-family: sans-serif;
