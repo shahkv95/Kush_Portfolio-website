@@ -10,21 +10,7 @@
 	
 	<!-- Font -->
 	
-	
-	
-	
-	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet">
 	
@@ -40,19 +26,7 @@
 	
 	<link href="responsive.css" rel="stylesheet">
 	
-    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 	
 	
@@ -102,10 +76,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 
-
-
-
-
 /*Css property for side nav bar starts*/
 
 .sidenav {
@@ -153,20 +123,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Below code for image gallery*/
 
 
@@ -210,58 +166,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 
 
-<!--The below code is for tooltip effect over image gallery heading-->
-
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 10px solid red;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -60px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-}
-
-<!--The above code is for tooltip effect in image gallery-->
-
-
 
 /*Below code is for new photo gallery*/
-
-
-
-
-
-
 
 
 
@@ -374,129 +280,18 @@ h1 {
 
 /*Above code is for top link button*/
 
-/*Below code is for notification*/
-
-
-.notification {
-  background-color: #555;
-  color: white;
-  text-decoration: none;
-  padding: 15px 26px;
-  position: relative;
-  display: inline-block;
-  border-radius: 2px;
-}
-
-.notification:hover {
-  background: red;
-}
-
-.notification .badge {
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  padding: 5px 10px;
-  border-radius: 50%;
-  background: red;
-  color: white;
-}
-
-
-
-/*Above code is for notification*/
-
-
-
-
-
-
-
-
-/* The snackbar - position it at the bottom and in the middle of the screen */
-#snackbar {
-    visibility: hidden; /* Hidden by default. Visible on click */
-    min-width: 250px; /* Set a default minimum width */
-    margin-left: -125px; /* Divide value of min-width by 2 */
-    background-color: #333; /* Black background color */
-    color: #fff; /* White text color */
-    text-align: center; /* Centered text */
-    border-radius: 2px; /* Rounded borders */
-    padding: 16px; /* Padding */
-    position: fixed; /* Sit on top of the screen */
-    z-index: 1; /* Add a z-index if needed */
-    left: 40%; /* Center the snackbar */
-    bottom: 30px; /* 30px from the bottom */
-}
-
-/* Show the snackbar when clicking on a button (class added with JavaScript) */
-#snackbar.show {
-    visibility: visible; /* Show the snackbar */
-}
-
-/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
-However, delay the fade out process for 2.5 seconds */
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 1.0s 2.5s;
-}
-
-/* Animations to fade the snackbar in and out */
-@-webkit-keyframes fadein {
-    from {bottom: 0; opacity: 0;} 
-    to {bottom: 30px; opacity: 1;}
-}
-
-@keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
-}
-
-@-webkit-keyframes fadeout {
-    from {bottom: 30px; opacity: 1;} 
-    to {bottom: 0; opacity: 0;}
-}
-
-@keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </style>
    
     
       <!--Above is a testing code snippet-->
-    
-    
-    
-    
-    
+
     
 </head>
 <body>
-	
-    
-         
+  
     
     <button onclick="topFunction()" id="myBtn1" title="Go to top">Top</button>
-
-    
-    
-	
-            
-            
            
             <header> 
             
@@ -505,18 +300,16 @@ However, delay the fade out process for 2.5 seconds */
               <!--Side nav bar code-->
     
     
-  <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#main" class="fa fa-home"> Home</a>
-  <a href="#aboutme">About Me</a>
-  <a href="#piechart">Normal Routine</a>
-  <a href="#designsample">Design Samples</a>
-  <a href="#experience12">Work Experience</a>
-  <a href="#education">Education</a>
-  
-  <a href="coupon.html">Online Training Coupons</a>
-   <a href="https://kushshah253.wooplr.com/">Online Store</a>
-</div>
+  	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="#main"> Home</a>
+	  <a href="#aboutme">About Me</a>
+	  <a href="#education">Education</a>
+	  <a href="#experience12">Professional Experience</a>
+	  <a href="#experience12">Extra Curricular Activities</a>
+	  <a href="#experience12">Leadership skills</a>
+	  <a href="#designsample">Design Samples</a>
+	</div>
 
 <div id="main" class="btn btn-outline-success">
   
@@ -526,17 +319,10 @@ However, delay the fade out process for 2.5 seconds */
     
     
     <!--Side nav bar code ends-->
-    
 
             
-            
             <br/>
-            
-            
-           
-            
-            
-            
+             
             <strong>
             
             
@@ -544,12 +330,12 @@ However, delay the fade out process for 2.5 seconds */
 			<div class="heading-wrapper">
 				<div class="row">
 					<div class="col-sm-6 col-md-6 col-lg-4">
-						<div class="info">
+						<div>
 							
 							<div class="right-area">
-								<span class="glyphicon glyphicon-map-marker"> <h4>PF(Boys Hostel)</h4></span>
+								<span class="glyphicon glyphicon-map-marker"><h6>Based in</h6> </span>
 								
-								<h5>SRM University Chennai</h5>
+								<h5>SRM IST, KTR Chennai</h5>
                                                                 <h5>603203</h5>
 							</div><!-- right-area -->
 						</div><!-- info -->
@@ -559,7 +345,7 @@ However, delay the fade out process for 2.5 seconds */
 						<div class="info">
 							
 							<div class="right-area">
-								<span class="glyphicon glyphicon-earphone"><h4>9461****48</h4></span>
+								<span class="glyphicon glyphicon-earphone"><h4>1234567890</h4></span>
 								
 								<h6>MON - FRI</h6>
                                                                 <h6>10AM - 6PM</h6>
@@ -571,7 +357,7 @@ However, delay the fade out process for 2.5 seconds */
 						<div class="info">
 							
 							<div class="right-area">
-								<i class="fa fa-envelope"><h4><a href="mailto:kushshah253@gmail.com">kushshah253@gmail.com</a></h4></i>
+								<i class="fa fa-envelope"><h4><a href="mailto:kushlinkedin@gmail.com">kushlinkedin@gmail.com</a></h4></i>
                                                             
 								<h6>REPLY within 48 HOURS</h6>
                                                                 
@@ -587,14 +373,9 @@ However, delay the fade out process for 2.5 seconds */
 			<a class="downlad-btn" href="errorimg.html">Download CV</a>
                          <br/><br/> <br/><br/> <br/><br/> <br/><br/><br/><br/> <br/><br/><br/><br/>
                                                                 <br/><br/><br/><br/><br/>
-                                                                <a href="#" class="notification">
-  <span><button onclick="myFunction()">Inbox</button></span>
-  <span class="badge">1</span>
-</a>
+                                                                
         
-<!-- The actual snackbar -->
-<div id="snackbar">Please contact me through the email mentioned. It will be updated soon.</div>       
-		</div><!-- container -->
+
 	</header>
 	
     <!-- Use a button to open the snackbar -->
@@ -606,11 +387,7 @@ However, delay the fade out process for 2.5 seconds */
   <br/>  
     
  <br/>
-            
-    
-    
-    
-    
+
     
 	<section class="intro-section">
 		<div class="container">
@@ -620,11 +397,12 @@ However, delay the fade out process for 2.5 seconds */
 					<div class="intro">
 						<div class="profile-img showshadow"><img src="IMG_20180824_085859.jpg" alt="Profile Pic"></div>
 						<h2><b>Kush Shah</b></h2>
-						<h4 class="font-yellow">FRONT END WEB DEVELOPER</h4>
-                                                <h4 class="font-yellow">GRAPHICS DESIGNER</h4>
+						<h4 class="font-yellow">UI/UX DESIGNER</h4>
+						<h4 class="font-yellow">DATA ANALYST</h4>
+                                                
 						<ul class="information margin-tb-30">
 							<li><b>BORN : </b>March 25, 1999</li>
-							<li><b>EMAIL : </b><a href="mailto:kushshah253@gmail.com">kushshah253@gmail.com</a></li>
+							<li><b>EMAIL : </b><a href="mailto:kushlinkedin@gmail.com">kushlinkedin@gmail.com</a></li>
 							<li><b>PROFESSION : </b>Undergraduate in CSE(BTech)</li>
 						</ul>
 						<ul class="social-icons">
@@ -640,18 +418,10 @@ However, delay the fade out process for 2.5 seconds */
 			</div><!-- row -->
 		</div><!-- container -->
 	</section><!-- intro-section -->
-	
-        
-        
-        
-        
-        
-        
+   
               
         <hr/>
-        
-        
-        
+   
         
         <section id="aboutme" class="about-section section" style="background-color: rgba(225,225,225,0.4)">
 		<div class="container">
@@ -663,50 +433,48 @@ However, delay the fade out process for 2.5 seconds */
 					</div>
 				</div><!-- col-sm-4 -->
 				<div class="col-sm-8">
-					<p class="margin-b-50">Heyy..Everyone. You can call me a confused person-sometimes.!
-                                        I am a kind of person who wants to do everything once in a while. I want to
-                                        experience as many things as those are present in this world. Presently, I have
-                                        been working as a Graphic Designer and developing responsive web sites. I want to
-                                        explore my passion in Machine Learning,Cyber Security and Ethical hacking too.
-                                        I personally believe that each and every work has its own importance. Nothing
-                                        is easy in this world.
-                                        I want to know about many things and wanna be a master of one thing.
-                                        I like my audience and would like to acknowledge for
-                                        showering lots of love on me.</p>
+					<p class="margin-b-50">Hey I am Kush Shah and I help people improve their solutions.
+The journey from a person who was extremely interested in astronomy and mathematics to a cold-blooded coder has been absolutely exciting. Leadership and self-confidence are couple of qualities among those that were instilled in me during my schooling days. Graphic Designing was the first most thing I planned to explore as soon as I join my Undergraduate Program, and I did it. I extended those skills to UI/UX designing. One of the best part I admire about Computer Science is that it is highly competitive and updated field. So next thing in my dish were Machine Learning and Deep Learning. Wait...! Did I forget to mention about the Digital marketing? Yes, maybe. By the way I did try out that as well. I will keep on exploring various fields with time.
+
+But what have I learned the most is never hesitate to try anything new.</p>
 					
 					<div class="row">
+
 						<div class="col-sm-6 col-md-6 col-lg-3">
 							<div class="radial-prog-area margin-b-30">
-								<div class="radial-progress" data-prog-percent=".84">
+								<div class="radial-progress" data-prog-percent=".90">
 									<div></div>
-									<h6 class="progress-title">HTML5 & CSS3</h6>
+									<h6 class="progress-title">UX DESIGNING</h6>
+								</div>
+							</div><!-- radial-prog-area-->
+						</div><!-- col-sm-6-->
+
+
+						<div class="col-sm-6 col-md-6 col-lg-3">
+							<div class="radial-prog-area margin-b-30">
+								<div class="radial-progress" data-prog-percent=".80">
+									<div></div>
+									<h6 class="progress-title">Graphic Designing</h6>
 								</div>
 							</div><!-- radial-prog-area-->
 						</div><!-- col-sm-6-->
 					
-						<div class="col-sm-6 col-md-6 col-lg-3">
-							<div class="radial-prog-area margin-b-30">
-								<div class="radial-progress" data-prog-percent=".89">
-									<div></div>
-									<h6 class="progress-title">WEB DESIGN</h6>
-								</div>
-							</div><!-- radial-prog-area-->
-						</div><!-- col-sm-6-->
+						
 						
 						<div class="col-sm-6 col-md-6 col-lg-3">
 							<div class="radial-prog-area margin-b-30">
-								<div class="radial-progress" data-prog-percent=".81">
+								<div class="radial-progress" data-prog-percent=".85">
 									<div></div>
-									<h6 class="progress-title">BOOTSTRAP</h6>
+									<h6 class="progress-title">DATA ANALYTICS</h6>
 								</div>
 							</div><!-- radial-prog-area-->
 						</div><!-- col-sm-6-->
 						
 						<div class="col-sm-6 col-md-6 col-lg-3">
 							<div class="radial-prog-area margin-b-50">
-								<div class="radial-progress" data-prog-percent=".85">
+								<div class="radial-progress" data-prog-percent=".80">
 									<div></div>
-									<h6 class="progress-title">GRAPHIC<br/>DESIGNER</h6>
+									<h6 class="progress-title">DATA SCIENCE</h6>
 								</div>
 							</div><!-- radial-prog-area-->
 						</div><!-- col-sm-6-->
@@ -716,44 +484,357 @@ However, delay the fade out process for 2.5 seconds */
 			</div><!-- row -->
 		</div><!-- container -->
 	</section><!-- about-section -->
+	 
+        
+        <br/>
+
+        <hr/>
+        
+
+
+        <section class="education-section section" id="education">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="heading">
+						<h3><b>Education</b></h3>
+						<h6 class="font-lite-black"><b>ACADEMIC CAREER</b></h6>
+					</div>
+				</div><!-- col-sm-4 -->
+				<div class="col-sm-8">
+					<div class="education-wrapper">
+						<div class="education margin-b-50">
+							<h4><b>BTECH IN COMPUTER SCIENCE AND ENGINEERING</b></h4>
+							<h5 class="font-yellow"><b>SRM Institute of Science and Technology</b></h5>
+							<h6 class="font-lite-black margin-t-10">Expected to Graduate in 2021</h6>
+							<p class="margin-tb-30">
+								<ul>
+									<li>Secured 9.48 CGPA (upto 6th semester)</li>
+									<li>Received 3 Merit based scholarship - Tuition fees waiver - Rs. 3,75,000 only</li>
+									<li>Presented 2 research papers - Mathematics and Machine Learning</li>
+								</ul>
+							</p>
+						</div><!-- education -->
+						</div>
+                        <div class="education-wrapper">
+                        
+						<div class="education margin-b-50">
+							<h4><b>SENIOR SECONDARY EDUCATION</b></h4>
+							<h5 class="font-yellow"><b>BVB's GIPCL ACADEMY</b></h5>
+							<h6 class="font-lite-black margin-t-10">Cleared in April 2017</h6>
+							<p class="margin-tb-30">
+								<ul>
+									<li>Ranked no 1 in School under the Science stream with Mathematics major(PCM)</li><br/>
+									<li>Secured 95% in PCM category</li>
+								</ul>
+							</p>
+						</div><!-- education -->
+                            </div>
+						<div class="education-wrapper">
+						<div class="education margin-b-50">
+							<h4><b>SECONDARY EDUCATION</b></h4>
+							<h5 class="font-yellow"><b>BVB's GIPCL ACADEMY</b></h5>
+							<h6 class="font-lite-black margin-t-10">Cleared in APRIL 2015</h6>
+							<p class="margin-tb-30">
+								<ul>
+									<li>Secured 10 CGPA - School Topper</li><br/>
+									<li>Awarded Kulpati KM Munshi Award for excellance performance</li>
+								</ul>
+							</p>
+						</div><!-- education -->
+					</div><!-- education-wrapper -->
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+		
+	</section><!-- about-section -->
+
+   
+        
+	<br/>
+	<hr style='width:80% ; color:#000 ; align: center ; color: blue ; size: 100px ; height:50px'>
 	
         
         
-        <br/>
-        <hr/>
-        
-        
-        
-        
-        
-         <!--Calling pie chart whose script is mentioned at the end-->
-        
-        
-        <h1><emp>Normal Routine</emp></h1>
+	<section class="experience-section section" id="experience12">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="heading">
+						<h3><b>Professional Experience</b></h3>
+						<h6 class="font-lite-black"><b>PREVIOUS JOBS</b></h6>
+					</div>
+				</div><!-- col-sm-4 -->
+				<div class="col-sm-8">
+				
+					<div class="experience margin-b-50">
+						<h4><b>BARCLAYS (Financial Services)</b></h4>
+						<h5 class="font-yellow"><b>Risk Finance Treasury Technology Intern</b></h5>
+						<h6 class="margin-t-10">JUNE 2020 - JULY 2020</h6>
+						<br/>
+						<ul class="list margin-b-30">
+							<li>Redesigned 2 UI/UX product templates & tested in-house product, used by 10,000+ users</li>
+							<li>Delivered 30+ bugs and enhancements to the Business Intelligence team along with Animated ppt</li>
+							<li>Optimized 1 Task Allocation Progress handler</li>
+							<li>Innovated 2 alternate solutions for an internal problem</li>
+							<li>Presented the recommendations to the AVPs, VPs, CDO and MD</li>
+							<li>Interacted with 8 Managing Directors and Startup Founders</li>
+						</ul>
+					</div><!-- experience -->
+					
 
-<div id="piechart"></div>
+					<div class="experience margin-b-50">
+						<h4><b>JP MORGAN CHASE & CO. (Financial Services)</b></h4>
+						<h5 class="font-yellow"><b>Software Engineering Virtual Experience</b></h5>
+						<h6 class="margin-t-10">MAY 2020 - JUNE 2020</h6>
+						<br/>
+						<ul class="list margin-b-30">
+							<li>Interfaced data feeds of 2 stock prices to enable the team to analyze stock trading calls</li>
+							<li>Debugged & compiled 20+ bugs in broken typescript files to ensure web application runs correctly</li>
+							<li>Participated in this experience provided by InsideSherpa in collaboration with the company</li>
+							<li>Rendered python script in live Perspectice graph with alerts</li>
+						</ul>
+					</div><!-- experience -->
+
+					<div class="experience margin-b-50">
+						<h4><b>KPMG (Financial Services)</b></h4>
+						<h5 class="font-yellow"><b>Data Analytics Consulting Intern</b></h5>
+						<h6 class="margin-t-10">APRIL 2020 - MAY 2020</h6>
+						<br/>
+						<ul class="list margin-b-30">
+							<li>Carried out detailed data processing for 3 main datasets</li>
+							<li>Recommended 20+ suggestions to mitigate issues</li>
+							<li>Participated in this experience provided by InsideSherpa in collaboration with the company</li>
+							<li>Modelled 15+ reports and 3 dashboards for data insights</li>
+						</ul>
+					</div><!-- experience -->
+
+
+					<div class="experience margin-b-50">
+						<h4><b>SPIHER (Educational Services)</b></h4>
+						<h5 class="font-yellow"><b>NCCSGD Trainee cum Intern</b></h5>
+						<h6 class="margin-t-10">APRIL 2020 - APRIL 2020</h6>
+						<br/>
+						<ul class="list margin-b-30">
+							<li>Modelled various network configuration using CISCO Packet Tracer</li>
+							<li>Explored tasks related to IBM Cloud storage</li>
+							<li>Developed a mini game using python</li>
+						</ul>
+					</div><!-- experience -->
+					
+
+					<div class="experience margin-b-50">
+						<h4><b>LEAF DRIVE (IT/ACADEMIC Services)</b></h4>
+						<h5 class="font-yellow"><b>Web Developer Summer Intern</b></h5>
+						<h6 class="margin-t-10">MAY 2019 - JUNE 2019</h6>
+						<br/>
+						<ul class="list margin-b-30">
+							<li>Developed a front end web application for a student academy</li>
+							<li>Created 33% if the backend part of a website project</li>
+							<li>Altered color variants for 2 different website projects</li>
+						</ul>
+					</div><!-- experience -->
+					
+
+					<div class="experience margin-b-50">
+						<h4><b>TRYST'19, IIT DELHI (Educational Services)</b></h4>
+						<h5 class="font-yellow"><b>Campus Ambassador Marketing Intern</b></h5>
+						<h6 class="margin-t-10">JAN 2019 - FEB 2019</h6>
+						<br/>
+						<ul class="list margin-b-30">
+							<li>Strategized 5 valued marketing approaoches</li>
+							<li>Received the certificate of Merit for exceptional performance</li>
+							<li>Improved public speaking and convincing skills</li>
+							<li>Networked with more than 2000 students in & around the campus</li>							
+						</ul>
+					</div><!-- experience -->	
+
+					
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+		
+	</section><!-- experience-section -->
+	
+
+	<br/>
         
-        
-        
-         <!--Calling pie chart whose script is mentioned at the end-->
-        
-        
-        
-        
-           <br/>
         <hr/>
         
-         
-         
-         
-        
-        
-        
-        
-        <!-- MAIN (Center website) -->
+
+        <section class="education-section section" id="education">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="heading">
+						<h3><b>Extra Curricular Activites</b></h3>
+						<h6 class="font-lite-black"><b>ACADEMIC CAREER</b></h6>
+					</div>
+				</div><!-- col-sm-4 -->
+				<div class="col-sm-8">
+					<div class="education-wrapper">
+						<div class="education margin-b-50">
+							<h4><b>CONSULTING AND ANALYTICS, IIT GUWAHATI</b></h4>
+							<h5 class="font-yellow"><b>Summer Analytics Training cum Competition</b></h5>
+							<h6 class="font-lite-black margin-t-10">APRIL 2020 - JUNE 2020</h6>
+							<br/>
+
+							<ul class="list margin-b-30">
+								<li>Ranked in Top 400 among 4500+ initial participants</li>
+								<li>Received the certificate of Merit for exceptional performance</li>
+								<li>Leveraged 250+ hrs of curated program in Analytics,Machine Learning and Deep Learning</li>
+							</ul>
+						</div><!-- education -->
+					</div>
+
+
+                     <div class="education-wrapper">
+                        
+						<div class="education margin-b-50">
+							<h4><b>HACKTOBERFEST 2019</b></h4>
+							<h5 class="font-yellow"><b>Open Source Contributor</b></h5>
+							<h6 class="font-lite-black margin-t-10">OCTOBER 2020</h6>
+							<br/>
+
+							<ul class="list margin-b-30">
+								<li>Achieved event incentives foro completing 4+ pull requests</li>
+								<li>Contributed majorly to an open source organization - Legesher.io</li>
+							</ul>
+
+						</div><!-- education -->
+                     </div>
+
+
+                    <div class="education-wrapper">
+                        
+						<div class="education margin-b-50">
+							<h4><b>GIRLSCRIPT FOUNDATIONS</b></h4>
+							<h5 class="font-yellow"><b>GirlScript Summer of Code Open Source Contributor</b></h5>
+							<h6 class="font-lite-black margin-t-10">MARCH 2019 - MAY 2019</h6>
+							<br/>
+
+							<ul class="list margin-b-30">
+								<li>Awarded for being Top Contributor for the 3 month long event</li>
+								<li>Delivered 8+ contributions to various open source projects</li>
+							</ul>
+
+						</div><!-- education -->
+                     </div> 
+
+
+                     <div class="education-wrapper">
+                        
+						<div class="education margin-b-50">
+							<h4><b>SRM AUV(Funded Tech Team)</b></h4>
+							<h5 class="font-yellow"><b>Designer/Corporate Member</b></h5>
+							<h6 class="font-lite-black margin-t-10">MARCH 2018 - AUGUST 2018</h6>
+							<br/>
+
+							<ul class="list margin-b-30">
+								<li>Designed 4 posters for ACMEE International Event</li>
+								<li>Designed posters/tshirt, helped in activities relting to fundraising 150000+ INR</li>
+							</ul>
+
+						</div><!-- education -->
+                     </div> 
+
+
+                     <div class="education-wrapper">
+                        
+						<div class="education margin-b-50">
+							<h4><b>SRM MILAN(National Level Cultural Fest)</b></h4>
+							<h5 class="font-yellow"><b>Graphic Designer</b></h5>
+							<h6 class="font-lite-black margin-t-10">FEB 2018 - MARCH 2018</h6>
+							<br/>
+
+							<ul class="list margin-b-30">
+								<li>Designed badges for the Leads of SRM Milan</li>
+								<br/>
+								<li>Designed Invitation templates for the Guests/Alumni</li>
+							</ul>
+
+						</div><!-- education -->
+                     </div> 
+
+
+                     <div class="education-wrapper">
+                        
+						<div class="education margin-b-50">
+							<h4><b>SRM AARUUSH(National Level Techno Management Fest)</b></h4>
+							<h5 class="font-yellow"><b>Graphic Designer</b></h5>
+							<h6 class="font-lite-black margin-t-10">JULY 2017 - AUGUST 2018</h6>
+							<br/>
+
+							<ul class="list margin-b-30">
+								<li>Ideated and designed 10+ posters for various events</li>
+								<li>Volunteered for Aaruush Educates - enlighting 50+ elderly people</li>
+							</ul>
+
+						</div><!-- education -->
+                     </div> 
+
+
+
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+		
+	</section><!-- about-section -->
+
+
+	<br/>
+	<hr/>
+
+	<section class="experience-section section" id="experience12">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="heading">
+						<h3><b>LEADERSHIP SKILLS</b></h3>
+						<h6 class="font-lite-black"><b>OPPORTUNITIES</b></h6>
+					</div>
+				</div><!-- col-sm-4 -->
+				<div class="col-sm-8">
+				
+					<div class="experience margin-b-50">
+						<h4><b>HOUR OF CODE TECHNICAL MENTOR</b></h4>
+						<h5 class="font-yellow"><b>PROGRATE</b></h5>
+						<h6 class="margin-t-10">DECEMBER 2018</h6>
+						<br/>
+						<ul class="list margin-b-30">
+							<li>Mentored 60+ students to encourage them to code</li>
+							<li>Taught programming basiics to students of a rural school</li>
+						</ul>
+					</div><!-- experience -->
+					
+					<div class="experience margin-b-50">
+						<h4><b>HEAD BOY</b></h4>
+						<h5 class="font-yellow"><b>BVB'S GIPCL ACADEMY</b></h5>
+						<h6 class="margin-t-10">MAY 2015 - APRIL 2016</h6>
+						<br/>
+						<ul class="list margin-b-30">
+							
+							<li>Represented over 300 students for better initiatives and resolving various issues</li>
+							<li>Founded Green Fingers initiative - keeping society cleaner</li>
+                            <li>Fundraised 1,20,00+ INR from students and other staff members everyday by volunteer contribution of 1INR from students everday benefiting 100+ rural school students for their welfare</li>
+					</div><!-- experience -->
+					
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+		
+	</section><!-- experience-section -->
+
+
+<br/>
+<hr/>
+
+
+
+		        <!-- MAIN (Center website) -->
 <div id="designsample" class="main" style="background-color: rgba(245,245,245,0.4)">
 
-<h1>PORTFOLIO</h1>
+<h1>GFX - PORTFOLIO</h1>
 
 <h3>DESIGN SAMPLE</h3>
 <br/>
@@ -779,10 +860,7 @@ However, delay the fade out process for 2.5 seconds */
 <div class="tooltip">
   <span class="tooltiptext">Kush</span>
 </div>
-
-
-
-    
+ 
       
     </div>
   </div>
@@ -869,9 +947,7 @@ However, delay the fade out process for 2.5 seconds */
     </div>
   </div>
   
-    
-    
-       
+     
      <div class="column GraphicDesign Showall">
     <div class="content shadoweffect">
     <a href="Kush@spongy.png" data-fluidbox>
@@ -881,11 +957,7 @@ However, delay the fade out process for 2.5 seconds */
     </div>
   </div>
   
-    
-    
-    
-    
-    
+ 
     
      <div class="column WebDesign Showall">
     <div class="content shadoweffect">
@@ -895,18 +967,6 @@ However, delay the fade out process for 2.5 seconds */
       <button id="myBtn" class="btn btn-primary" style="background:#666">Tear Design</button>
     </div>
   </div>
-  
-    
-    
-    
-    
- 
-    
-    
-    
-    
-    
-    
     
     
 <!-- END GRID -->
@@ -915,196 +975,16 @@ However, delay the fade out process for 2.5 seconds */
 <!-- END MAIN -->
 </div>
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-       
-        
-        
-	<br/>
-	<hr style='width:80% ; color:#000 ; align: center ; color: blue ; size: 100px ; height:50px'>
-	
-        
-        
-        
-               
 
-        
-        
-       
-        
-        
-        
-        
-         <hr/>
-        
-        
-        
-        
-        
-	<section class="experience-section section" id="experience12">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-4">
-					<div class="heading">
-						<h3><b>Work Experience</b></h3>
-						<h6 class="font-lite-black"><b>PREVIOUS JOBS</b></h6>
-					</div>
-				</div><!-- col-sm-4 -->
-				<div class="col-sm-8">
-				
-					<div class="experience margin-b-50">
-						<h4><b>GRAPHIC DESIGNER</b></h4>
-						<h5 class="font-yellow"><b>AARUUSH CREATIVES</b></h5>
-						<h6 class="margin-t-10">JULY 2017 - JULY 2018</h6>
-						<p class="font-semi-white margin-tb-30">The journey began as a toddler in
-                                                the field of designing. But thanx to my seniors who lifted me from a zeroth 
-                                                level to a position where I could handle designing in a short interval of
-                                                time. Since then I have worked on different genres of designing. These includes
-                                                creative poster designing, banner designing, id cards, tshirt designing and
-                                                various others. The team's support gave me a chance to work with other
-                                                technical teams in the campus though.</p>
-						<ul class="list margin-b-30">
-							<li>Worked on Adobe Photoshop and Adobe Illustrator(amateur).</li>
-							<li>Poster published on the aaruush page.</li>
-							<li>Worked with senior designers.</li>
-						</ul>
-					</div><!-- experience -->
-					
-					<div class="experience margin-b-50">
-						<h4><b>GRAPHIC DESIGNER/CORPORATE MEMBER</b></h4>
-						<h5 class="font-yellow"><b>SRM AUV</b></h5>
-						<h6 class="margin-t-10">APRIL 2018 - August 2018</h6>
-						<p class="font-semi-white margin-tb-30">I have been working with the known
-                                                technical team - SRM AUV i.e. Autonomous Underwater Vehicle. I worked as 
-                                                graphic designer as well as helped in conducting help desk during pre-recruitment phase.</p>
-						<ul class="list margin-b-30">
-							
-							<li>Graphic Designer and front end developer is a great combination.</li>
-							<li>Posters type: Banners, id-cards, t-shirt designing, creative posters.</li>
-                                                        <li>Handle their pre-recruitment helpdesk. </li>
-					</div><!-- experience -->
-					
-				</div><!-- col-sm-8 -->
-			</div><!-- row -->
-		</div><!-- container -->
-		
-	</section><!-- experience-section -->
+	<br/>
+	<hr/>
 	
-	<section class="education-section section" id="education">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-4">
-					<div class="heading">
-						<h3><b>Education</b></h3>
-						<h6 class="font-lite-black"><b>ACADEMIC CAREER</b></h6>
-					</div>
-				</div><!-- col-sm-4 -->
-				<div class="col-sm-8">
-					<div class="education-wrapper">
-						<div class="education margin-b-50">
-							<h4><b>BTech IN COMPUTER SCIENCE AND TECHNOLOGY</b></h4>
-							<h5 class="font-yellow"><b>SRM Institute of Science and Technology</b></h5>
-							<h6 class="font-lite-black margin-t-10">PRESENTLY IN 4th YEAR</h6>
-							<p class="margin-tb-30">The campus is surrounded by ample of oppurtunities
-                                                        and I started my skill development in Graphic Designing as it involved
-                                                        digitalising the creative ideas on screen. I applied for various clubs/teams
-                                                        followed by selection(one such team was SRMSAT). Earned certificates in
-                                                        various competitions. Completed my training in web development. But I am 
-                                                        more into front end developing.As far as the scores are concerned, I
-                                                        managed to secure 9.51 CGPA in my first year. I like to code. I want to
-                                                        explore few fields like Machine Learning, Cyber Security and Ethical Hacking.</p>
-						</div><!-- education -->
-						</div>
-                        <div class="education-wrapper">
-                        
-						<div class="education margin-b-50">
-							<h4><b>Higher Secondary</b></h4>
-							<h5 class="font-yellow"><b>BVB's GIPCL ACADEMY</b></h5>
-							<h6 class="font-lite-black margin-t-10">Cleared IN April 2017</h6>
-							<p class="margin-tb-30">In my two years phase of higher secondary I was
-                                                        more interested into Mathematics and Physics. But bounded by pressurised
-                                                        community couldn't focus on developing more skills. Though was satisfied
-                                                        by my score in PCM(95%). Recieved few certificates too.</p>
-						</div><!-- education -->
-                            </div>
-						<div class="education-wrapper">
-						<div class="education margin-b-50">
-							<h4><b>SECONDARY EDUCATION</b></h4>
-							<h5 class="font-yellow"><b>BVB's GIPCL ACADEMY</b></h5>
-							<h6 class="font-lite-black margin-t-10">Cleared IN APRIL 2015</h6>
-							<p class="margin-tb-30">I was more into Mathematics. I liked to work on 
-                                                        number patterns. I am an active participant. I liked to explore more
-                                                        and more fields. Leaded a team of talented students who helped me to
-                                                        understand how efficient each one of us around is. As far as scores
-                                                        are concerned, I somehow managed to get 10 CGPA.</p>
-						</div><!-- education -->
-					</div><!-- education-wrapper -->
-				</div><!-- col-sm-8 -->
-			</div><!-- row -->
-		</div><!-- container -->
-		
-	</section><!-- about-section -->
-	
-	<section class="counter-section" id="counter">
-		<div class="container">
-			<div class="row">
-			<br/>
-				<div class="col-sm-6 col-md-6 col-lg-3" style="background-color: #666;color:white">
-					<div class="counter margin-b-30">
-						<h1 class="title"><b><span class="counter-value" data-duration="200" data-count="05">0</span></b></h1>
-						<h5 class="desc"><b>Coder Degrees</b></h5>
-					</div><!-- counter -->
-				</div><!-- col-md-3-->
-				
-				<div class="col-sm-6 col-md-6 col-lg-3" style="background-color: #666;color:white">
-					<div class="counter margin-b-30">
-						<h1 class="title"><b><span class="counter-value" data-duration="800" data-count="11">0</span></b></h1>
-						<h5 class="desc"><b>Satisfied Clients</b></h5>
-					</div><!-- counter -->
-				</div><!-- col-md-3-->
-				
-				
-				
-				<div class="col-sm-6 col-md-6 col-lg-3" style="background-color: #666;color:white">
-					<div class="counter margin-b-30">
-						<h1 class="title"><b><span class="counter-value" data-duration="1200" data-count="52">0</span></b></h1>
-						<h5 class="desc"><b>Hands on Projects</b></h5>
-					</div><!-- margin-b-30 -->
-				</div><!-- col-md-3-->
-				
-                                <div class="col-sm-6 col-md-6 col-lg-3" style="background-color: #666;color:white">
-					<div class="counter margin-b-30">
-						<h1 class="title"><b><span class="counter-value" data-duration="1800" data-count="125">0</span></b></h1>
-						<h5 class="desc"><b>Designed posters</b></h5>
-					</div><!-- counter -->
-				</div><!-- col-md-3-->
-                                
-                                
-                                
-			</div><!-- row-->
-		</div><!-- container-->
-    </section><!-- counter-section-->
-	
+
 	<footer>
 		<p class="copyright" style="color:white">
 			<strong>
- Portfolio-Kush | Made by <a href="#" target="_blank">Kushec</a>
-                        </strong>
+ 				Made by <a href="#" target="_blank">Kush Shah</a>
+            </strong>
 		</p>
 
 
@@ -1114,61 +994,14 @@ However, delay the fade out process for 2.5 seconds */
 	<!-- SCIPTS -->
 	
 	<script src="jquery-3.2.1.min.js"></script>
-	
-	<script src="tether.min.js"></script>
-	
 	<script src="bootstrap.js"></script>
-	
-	<script src="isotope.pkgd.min.js"></script>
-	
 	<script src="jquery.waypoints.min.js"></script>
-	
 	<script src="progressbar.min.js"></script>
-	
 	<script src="jquery.fluidbox.min.js"></script>
-	
 	<script src="scripts.js"></script>
     
     
-        
-        <!--The code snippet used below is for the pie chart-->
-        
-
-        
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-<script type="text/javascript">
-// Load google charts
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
-
-// Draw the chart and set the chart values
-function drawChart() {
-  var data = google.visualization.arrayToDataTable([
-  ['Task', 'Hours per Day'],
-  ['Work', 9],
-  ['Refreshment',2],
-  ['Eat/Social Time', 2],
- 
-  ['Learning/Training ', 4],
-  ['Sleep', 7]
-]);
-
-  // Optional; add a title and set the width and height of the chart
-  var options = {'title':'My Average Day', 'height':700};
-
-  // Display the chart inside the <div> element with id="piechart"
-  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-  chart.draw(data, options);
-}
-</script>
-
-        
-     <!--The code snippet used above is for the pie chart-->
-            
-        
-       
-     
+    
      
      <!--Below code is for top link button-->
      
@@ -1192,13 +1025,7 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 </script>
-     
-     
-     
-     
-     
-        
-        
+
 
      
      <!--Below code snippet is for gallery-->
@@ -1271,39 +1098,6 @@ function closeNav() {
 </script>
 
 <!--Script for side nav bar-->
-     
-   
-
-
-
-
-
-
-
-<script>
-    function myFunction() {
-    // Get the snackbar DIV
-    var x = document.getElementById("snackbar");
-
-    // Add the "show" class to DIV
-    x.className = "show";
-
-    // After 3 seconds, remove the show class from DIV
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-}
-</script>
-
-
-
-
-
-
-
-
-
-     
-     
-     
      
      
 </body>
