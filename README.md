@@ -1,5 +1,5 @@
 # Portfolio-website
-This is a small portfolio website made within 2 days time. This would be submitted to SRM Developers Student Club for testing.
+This is a basic website for my portfolio. Your feedback to improve it would be appreciated and taken positively!
 
 
 https://shahkv95.github.io/Kush_Portfolio-website/
